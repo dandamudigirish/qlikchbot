@@ -25,7 +25,7 @@ var intents = new builder.IntentDialog({
 });
 
 // Receive messages from the user about the Business
-bot.dialog('/api/messages/',intents);
+bot.dialog('/',intents);
 
 intents.matches('SalesIntent',[
     function(session,args){
