@@ -10,8 +10,8 @@ server.listen(process.env.port || process.env.PORT || 3978, function () {
 
 // Create chat connector for communicating with the Bot Framework Service
 var connector = new builder.ChatConnector({
-    appId: null, //process.env.MICROSOFT_APP_ID,
-    appPassword: null //process.env.MICROSOFT_APP_PASSWORD
+    appId: process.env.MICROSOFT_APP_ID,
+    appPassword: process.env.MICROSOFT_APP_PASSWORD
 });
 
 // Listen for messages from users
@@ -19,8 +19,8 @@ server.post('/api/messages', connector.listen());
 
 var bot = new builder.UniversalBot(connector);
 
-//Initialize the API AI with the token
-var recognizer = new apiairecognizer('c2c84e83bad641f7a197f0806496b536');//process.env.API_AI_TOKEN);
+//Initialize the API AI with the token. In the local use the original token
+var recognizer = new apiairecognizer(process.env.API_AI_TOKEN);
 var intents = new builder.IntentDialog({
          recognizers: [recognizer]
 });
