@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "api-ai-recognizer": "^1.1.1",
     "botbuilder": "^3.9.1",
+    "request": "^2.81.0",
     "restify": "^5.2.0"
   }
 }
