@@ -12,6 +12,15 @@
     "api-ai-recognizer": "^1.1.1",
     "botbuilder": "^3.9.1",
     "request": "^2.81.0",
-    "restify": "^5.2.0"
+    "restify": "^5.2.0",
+    "canvas-prebuilt": "^1.6.5-prerelease.1",
+    "enigma.js": "^2.0.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "promise": "^8.0.1",
+    "requirejs": "^2.3.5",
+    "sync": "^0.2.5",
+    "vega": "^3.0.2",
+    "ws": "^3.1.0"
   }
 }
